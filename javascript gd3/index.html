@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+// task1
+
+function myCurrency(number){
+return number + "$";
+}
+console.log(myCurrency(Number(100.55)));
+
+
+
+// task2
+let theNumber=5;
+let b=2;
+theNumber%b==0?console.log("the Number is not a prime"):console.log("the Number is a prime");
+
+
+// Task 3
+// Write a function that reverses a given number.
+
+
+
+// Task 4
+
+function randomNumber (min,max){
+    var result=max-min
+    console.log(Math.random()*result)
+    }
+    randomNumber(1,10)
+
+    
+
+// Task5
+
+function wordCapitalize(){
+var a="elzero web school";
+console.log(a.toUpperCase().charAt(0)+"lzero"+ " " +a.toUpperCase().charAt(7)+"eb"+" "+a.toUpperCase().charAt(11)+"chool");
+}
+wordCapitalize()
+
+
+
+
+// Task 6
+function myGrade(studentScore){
+
+if(studentScore>=90 && studentScore<=100){
+return"student's score is A";
+}
+
+else if (studentScore>=80 && studentScore<=89) {
+    return"student's score is B";
+}
+else if (studentScore>=70 && studentScore<=79) {
+    return"student's score is C";
+}
+else if (studentScore>=60 && studentScore<=69) {
+    return"student's score is D" ;
+}
+
+else if (studentScore>=0 && studentScore<=59) {
+    return"student's score is F" ;
+}
+else{
+    return"Error";
+}
+}
+console.log(myGrade(0));
+
+
+// task 7
+
+function advices(temperature){
+    temperature<10?console.log("recommend wearing a coat"):temperature>10 &&temperature<20?console.log("recommend wearing a sweater"):temperature>20?console.log("recommend wearing a T-shirt"):console.log(Error)
+
+}
+console.log(advices(30));
+
+// task 8
+
+function myCalculator(num1,num2,result){
+    var result;
+
+    switch(result){
+
+    case '+' :
+    console.log(result=num1+num2)
+
+    case '-':
+    console.log(result=num1-num2)
+
+    case '*' :
+    console.log(result=num1*num2)
+    case '/' :
+    console.log(result=num1/num2)
+}
+
+}
+console.log(myCalculator(10,20,'+'))
+
+
+</script>
+</body>
+</html>
